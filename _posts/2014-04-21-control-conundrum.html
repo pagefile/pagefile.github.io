@@ -1,0 +1,14 @@
+---
+layout: post
+title: Control Conundrum
+date: '2014-04-21T17:52:00.000-07:00'
+author: Alex Gaudette
+tags:
+- mind meander
+- Game Development
+modified_time: '2014-04-21T17:52:49.514-07:00'
+blogger_id: tag:blogger.com,1999:blog-2906956730781300230.post-4773157108582167734
+blogger_orig_url: http://memlk.blogspot.com/2014/04/control-conundrum.html
+---
+
+AI is an interesting and complex problem. Not just trying to perfect their behaviors, but how they control their game objects as well. When I really started getting into modding Tribes 2 some time in the ancient past, I discovered the "Player Object", the little dude with the gun in the game world, was agnostic to what controlled it. It didn't know or care what was commanding it. It just did what it was told. The object in the game world was the same regardless of who or what was controlling it.<br /><br />If my game is going to have AI (like Infinity Defense will), I try to follow that pattern. I don't have to write special code in a new game object specifically for the AI. I write an AI controller class just like I wrote a player input controller class. These controller classes are what actually send the game object its input. From there the game object behaves as it should given the input. Unfortunately, you can't get a component in Unity by and interface it implements, but a good object hierarchy might be able to keep the solution elegant I think.<br /><br />The real problem now is making good AI.

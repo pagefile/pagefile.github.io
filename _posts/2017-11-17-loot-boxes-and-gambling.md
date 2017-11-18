@@ -2,7 +2,6 @@
 layout: post
 title: "Loot Boxes and Gambling"
 date: 2017-11-17 18:38:00 -0600
-categories: [Game Devevlopment, Loot Boxes, Gacha, Games, Battlefront II]
 ---
 
 There’s a bit of a debate going on now on whether or not loot crates are gambling, courtesy of EA and Star Wars Battlefront II. Many arguments hinge on laws on gambling and how they exist now instead of looking at loot crates, how can can be implemented (and are in Battlefront II) and if those laws should be changed. I think it’s a dangerous stance to take, since gambling, and the laws that regulate it, are both defined by humans. We should look at new situations as they arise, assess them, and determine if this new situation should be considered gambling.

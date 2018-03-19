@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Controllers"
-date: 2018-3-18 12:51:00 -0600
+date: 2018-3-18 23:51:00 -0500
 ---
 
 Not the joypad kind. The code kind. It’s easy to just slap some input code on a player object to get it working. That’s all well and good until you need a different player object. Or a different kind of player object. That’s where having a controller class is handy. It separates the movement and control logic from the input logic. This let’s me do things like this:
@@ -79,8 +79,10 @@ public class BasicEnemyWaveController : FighterController
 
 And now I have one that moves back and forth. I’ll plug it into the game.
 
+{% include video.html file="/files/videos/wavemovement.mp4" %}
 
 And of course, I can have the player ship do the same thing
 
+{% include video.html file="/files/videos/playerwave.mp4" %}
 
 Even in single player game a design like this is important because of the flexibility it offers. I’m not trapped by the limitations of code, so if down the line I want something like a “Reverse Boss Rush” mode where the player plays as bosses, the core mechanics are very simple to implement. It also makes for nice and clean code that’s easy to read. No one likes a multithousand line behemoth.

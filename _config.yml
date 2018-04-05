@@ -31,3 +31,9 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+collections:
+  - HelloUnity
+defaults:
+    scope:
+      path: "/HelloUnity"
+      type: "HelloUnity"

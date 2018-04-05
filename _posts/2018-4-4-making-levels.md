@@ -14,10 +14,10 @@ Another handy use is that I can customize level loading. Right now I'm using the
 
 For this game, partial levels are probably mostly going to be used to seperate the mechanical and visual aspects of a level. I'm doing it this way because I want more than just a vertical scrolling background like older shooter's like this would have. There's various ways to solve the problem, but many of them have a pretty big flaw in one way or another. In the end, I decided I'd have two cameras. One camera is over the player and enemies. This is where the action happens. Another camera is over the level geometry. A landscape, a city, a space ship, or maybe a moon. It travels along a path to simulate the player flying through a level. The player and enemies actually only exist in a small area in the game space. The level is sort of being rendered behind them as a sort of moving skybox. This means I don't have to worry about parenting ships, projectils, and particle effects to the camera, or worry about lining enemies up where the player can hit them when the camera zig zags around a level. Here's how it looks in game right now:
 
-{% include video.html file="files/videos/simplegameplay.mp4" %}
+{% include video.html file="/files/videos/SimpleGameplay.mp4" %}
 
 And here is how it looks while playing in scene view
 
-{% include video.html file="files/videos/shooterSceneView.mp4" %}
+{% include video.html file="/files/videos/shooterSceneView.mp4" %}
 
 With Unity's layers, I can keep both scenes seperate even when they're really right on top of each other. I don't really have a good way of automating the layers right now, so everything has to be manually applied to the prefabs and GameObjects, but I might be able to find a solution later.
